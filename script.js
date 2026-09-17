@@ -1,6 +1,3 @@
-// ===============================
-// ALICE IN BORDERLAND QUIZ
-// ===============================
 
 const questions = [
 
@@ -222,18 +219,9 @@ const questions = [
 ];
 
 
-// ===============================
-// VARIABLES
-// ===============================
-
 let currentUser = "";
 let timeLeft = 600; // 10 minutes
 let timerInterval;
-
-
-// ===============================
-// START QUIZ
-// ===============================
 
 function startQuiz() {
 
@@ -258,11 +246,6 @@ function startQuiz() {
 
     startTimer();
 }
-
-
-// ===============================
-// LOAD QUESTIONS
-// ===============================
 
 function loadQuestions() {
 
@@ -308,11 +291,6 @@ function loadQuestions() {
 
 }
 
-
-// ===============================
-// PROGRESS BAR
-// ===============================
-
 function updateProgress() {
 
     const progress =
@@ -324,11 +302,6 @@ function updateProgress() {
     document.getElementById("questionNumber").innerText =
         "🎴 20 QUESTIONS • CHOOSE YOUR ANSWERS";
 }
-
-
-// ===============================
-// TIMER
-// ===============================
 
 function startTimer() {
 
@@ -357,11 +330,6 @@ function startTimer() {
     }, 1000);
 }
 
-
-// ===============================
-// SUBMIT QUIZ
-// ===============================
-
 function submitQuiz() {
 
     clearInterval(timerInterval);
@@ -383,11 +351,6 @@ function submitQuiz() {
 
     showResult(score);
 }
-
-
-// ===============================
-// SHOW RESULT
-// ===============================
 
 function showResult(score) {
 
@@ -439,9 +402,6 @@ function showResult(score) {
 }
 
 
-// ===============================
-// RESTART
-// ===============================
 
 function restartQuiz() {
 
