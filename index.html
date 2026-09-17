@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borderland Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOGIN PAGE -->
+    <div id="loginPage" class="page">
+        <div class="login-box">
+            <div class="logo">♠ ♥ ♦ ♣</div>
+            <h1>BORDERLAND</h1>
+            <p class="subtitle">Alice in Borderland Quiz</p>
+
+            <input type="text" id="username" placeholder="Enter your name">
+
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <button onclick="startQuiz()">ENTER THE GAME →</button>
+
+            <p id="loginError"></p>
+        </div>
+    </div>
+
+
+    <!-- QUIZ PAGE -->
+    <div id="quizPage" class="page hidden">
+
+        <header>
+            <div>
+                <h1>♠ BORDERLAND QUIZ</h1>
+                <p id="welcomeUser"></p>
+            </div>
+
+            <div class="timer">
+                ⏱️ <span id="timer">10:00</span>
+            </div>
+        </header>
+
+        <div class="quiz-container">
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <p id="questionNumber"></p>
+
+            <div id="quiz"></div>
+
+            <button class="submit-btn" onclick="submitQuiz()">
+                SUBMIT QUIZ
+            </button>
+
+        </div>
+    </div>
+
+
+    <!-- RESULT PAGE -->
+    <div id="resultPage" class="page hidden">
+
+        <div class="result-box">
+
+            <div class="result-symbol">♠ ♥ ♦ ♣</div>
+
+            <h1>GAME OVER</h1>
+
+            <p id="resultMessage"></p>
+
+            <div class="score-circle">
+                <span id="score">0</span>
+                <small>/ 20</small>
+            </div>
+
+            <h2 id="percentage"></h2>
+
+            <p id="performance"></p>
+
+            <div class="result-details">
+                <p>👤 Player: <span id="playerName"></span></p>
+                <p>🎯 Correct Answers: <span id="correctAnswers"></span></p>
+                <p>❌ Wrong Answers: <span id="wrongAnswers"></span></p>
+            </div>
+
+            <button onclick="restartQuiz()">PLAY AGAIN</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
