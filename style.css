@@ -14,8 +14,6 @@ body {
     min-height: 100vh;
 }
 
-/* Common */
-
 .page {
     min-height: 100vh;
     display: flex;
@@ -26,8 +24,6 @@ body {
 .hidden {
     display: none;
 }
-
-/* LOGIN */
 
 .login-box {
     width: 420px;
@@ -110,7 +106,6 @@ button:hover {
     margin-top: 15px;
 }
 
-/* QUIZ HEADER */
 
 #quizPage {
     display: block;
@@ -148,8 +143,6 @@ header h1 {
 
     box-shadow: 0 0 12px rgba(255, 23, 68, 0.5);
 }
-
-/* QUIZ */
 
 .quiz-container {
     width: 850px;
@@ -221,7 +214,6 @@ header h1 {
     background: linear-gradient(90deg, #d50000, #ff1744);
 }
 
-/* RESULT */
 
 #resultPage {
     background:
@@ -309,8 +301,6 @@ header h1 {
 .result-details span {
     color: white;
 }
-
-/* MOBILE */
 
 @media (max-width: 600px) {
 
